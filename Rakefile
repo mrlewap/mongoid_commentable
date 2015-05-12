@@ -12,12 +12,12 @@ require 'rake'
 require 'jeweler'
 Jeweler::Tasks.new do |gem|
   gem.name = "mongoid_commentable"
-  gem.homepage = "http://github.com/mgolovnia/mongoid_commentable"
+  gem.homepage = "https://github.com/mrlewap/mongoid_commentable.git"
   gem.license = "MIT"
   gem.summary = %Q{Comments for Mongoid documents}
   gem.description = %Q{Mongoid_commentable provides methods to create commentable documents}
-  gem.email = "mgolovnia@gmail.com"
-  gem.authors = ["Max Golovnia"]
+  gem.email = "mrlewap@gmail.com"
+  gem.authors = ["Max Golovnia", "Pavel Trepkosh"]
   gem.version = File.read('VERSION').chomp
 end
 Jeweler::RubygemsDotOrgTasks.new
@@ -35,7 +35,7 @@ end
 
 task :default => :spec
 
-require 'rake/rdoctask'
+require 'rdoc/task'
 Rake::RDocTask.new do |rdoc|
   version = File.exist?('VERSION') ? File.read('VERSION') : ""
 
